@@ -1,0 +1,124 @@
+/*
+ * @author: Davy Kerkhoven
+ * ID: 14882018
+ * Web Development Assignment 2
+ * 
+ * This is the css file for BOTH booking and admin pages.
+ */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serf;
+}
+
+div {
+    position: absolute; 
+
+}
+.header {
+    height: 80px;
+    top:0px; 
+    left: 0px;
+    width:100%;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+.body {
+    top: 95px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.leftpad {
+    left: 0;
+    width: 15%;
+    background: linear-gradient (white, #00A1DE);
+    background: -webkit-linear-gradient(white, #00A1DE);
+    background: -o-linear-gradient(white, #00A1DE);
+    background: -moz-linear-gradient(white, #00A1DE);
+    height: 100%;
+}
+
+.mainbody {
+    left: 15%;
+    width: 70%;
+    height: 100%;
+}
+
+.rightpad {
+    left: 85%;
+    width: 15%;
+    background: linear-gradient (white, #00A1DE);
+    background: -webkit-linear-gradient(white, #00A1DE);
+    background: -o-linear-gradient(white, #00A1DE);
+    background: -moz-linear-gradient(white, #00A1DE);
+    height: 100%;
+}
+
+.header {
+    background-color: #00A1DE;
+}
+
+.TAXI{
+    position: absolute;
+    bottom: 5px;
+    padding-left: 25%;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.assignment {
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+}
+
+.login {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+}
+
+.progressbar {
+    width: 100%;
+    height: 100px;
+    background-color: #00A1DE;
+}
+
+.innerbody {
+    top: 100px;
+    width: 100%;
+}
+
+.button {
+    float:left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 3px;
+    text-align: left;
+}
+
+table {
+    border: 1px solid #cccccc;
+}
+
+.progressbar {
+    background-image: url("taxi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}

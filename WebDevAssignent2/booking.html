@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking</title>
+        <link rel="stylesheet" type="text/css" href="booking.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <script src="booking.js" type="text/javascript"></script>
+        
+    </head>
+    
+    <body>
+        <div class="header">
+            <strong class="TAXI">Cabs Online</strong><label class="assignment">Web Dev Assignment 2</label>
+            <a class="login" href="admin.html">Admin Login</a>
+        </div>
+        <div class="body">
+            <div class="leftpad"></div>     
+            <div class="mainbody">
+                <div class="progressbar"> 
+                </div>
+                <div id ="innerbody" class="innerbody">
+                    <form onsubmit="step2()" id="bookingform">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 50%;">
+                                <div class="help"></div>
+                                Pick up address: <br>
+                                <textarea class="address" form="bookingform" id="pickupAddr" required></textarea>
+                                <br>
+                                Destination: <br>
+                                <textarea form="bookingform" id="destinationAddr" required=""></textarea><br>
+                                <input type="submit" style="display:none;">                               
+                            </td>
+                            <td style="width: 50%;">                               
+                                Date & Time: <br>
+                                <input type="date" id="date"><script>setTodaysDate();</script>
+                                <select style="height:24px;" id="hour">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12" selected>12</option>
+                                </select>
+                                <select style="height:24px;" id="minute">
+                                    <option value="00">00</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                </select>
+                                <select style="height:24px;" id="ampm">
+                                    <option value="am">AM</option>
+                                    <option value="pm" selected>PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="button" value="Next Step" >
+                    </form>
+                </div> 
+            </div>
+            <div class="rightpad"></div>    
+        </div>
+    </body>
+</html>
